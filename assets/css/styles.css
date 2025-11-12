@@ -1,0 +1,32 @@
+.tabla-bombo th:first-child,
+.tabla-bombo td:first-child {
+    width: 20%;
+}
+
+.tabla-bombo thead tr:nth-child(2) th,
+.tabla-bombo tbody td:not(:first-child) {
+    width: 10%;
+}
+
+/* Estilos para uniformidad de tarjetas */
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-top {
+    height: 150px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.card-body {
+    flex-grow: 1;
+    min-height: 160px; /* Aumentado para acomodar texto largo */
+}
+
+/* Espaciado uniforme entre tarjetas */
+.col-3 .card {
+    margin-bottom: 1rem;
+}
